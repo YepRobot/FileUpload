@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文件详情</title>
+</head>
+<body>
+<div th:object="${myfile}">
+    <p th:text="'uid：' + *{getFileID()}"/>
+    <p th:text="'文件名：' + *{getFileName()}"/>
+    <p th:text="'上传时间：' + *{getFileCreateTime()}"/>
+    <p th:text="'文件类型：' + *{getFileType()}"/>
+</div>
+<a th:href="@{../index}"><button>确定</button></a>
+</body>
+</html>

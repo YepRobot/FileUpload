@@ -1,0 +1,25 @@
+.detail-table{
+    width:90%;
+    border:1px solid #afafaf;
+    border-collapse:collapse;
+    font-size:15px;
+    margin-bottom:10px;
+}
+.detail-table caption{
+    text-align:left;
+    font-size:16px;
+    padding:2px;
+    font-weight:bold;
+}
+
+.detail-table td{
+    padding:5px;
+    border: 1px solid gray;
+    font-size:15px;
+    text-align:center;
+
+}
+
+.oprate{
+    width: 200px;
+}

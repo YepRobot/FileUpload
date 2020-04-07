@@ -1,0 +1,6 @@
+2020-04-05 19:33:36,782 [qtp277630005-11] ERROR [com.yan.controller.DownloadFile] - 410
+2020-04-05 19:34:39,459 [qtp277630005-11] ERROR [com.yan.controller.DownloadFile] - 410
+2020-04-05 19:34:39,459 [qtp277630005-16] ERROR [com.yan.controller.DownloadFile] - 410
+2020-04-05 19:39:08,045 [qtp277630005-16] ERROR [com.yan.controller.DownloadFile] - 410 无此文件C:\learn\0ce9f006-004a-4d16-90e4-754eea820a68 (系统找不到指定的文件。)
+2020-04-05 19:44:25,680 [qtp277630005-11] ERROR [com.yan.controller.DownloadFile] - 410 无此文件C:\learn\0ce9f006-004a-4d16-90e4-754eea820a68 (系统找不到指定的文件。)
+2020-04-05 20:21:32,572 [qtp1936628443-18] ERROR [com.yan.controller.DownloadFile] - 410 无此文件C:\learn\62b74b43-82c0-40bd-8073-b4ef4b4e27ef (系统找不到指定的文件。)

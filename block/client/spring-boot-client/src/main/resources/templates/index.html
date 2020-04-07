@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <style>
+      .detail-table{
+          width:90%;
+          border:1px solid #afafaf;
+          border-collapse:collapse;
+          font-size:15px;
+          margin-bottom:10px;
+      }
+      .detail-table caption{
+          text-align:left;
+          font-size:16px;
+          padding:2px;
+          font-weight:bold;
+      }
+
+      .detail-table td{
+          padding:5px;
+          border: 1px solid gray;
+          font-size:15px;
+          text-align:center;
+
+      }
+
+      .oprate{
+          width: 200px;
+      }
+  </style>
+    <title>文件上传下载服务</title>
+
+</head>
+<body>
+
+<form action="/uploadFile" method="post" enctype="multipart/form-data">
+    文件<input type="file" name="file">
+    <input type="submit" value="提交">
+</form>
+    <table class="detail-table" border="1px" cellspacing="0" >
+        <tr>
+            <th>文件名</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="myfile:${fileList}">
+            <td name="uid" th:text="${myfile.fileID}" style="display: none"></td>
+            <td name="fineName" th:text="${myfile.fileName}" ></td>
+            <td class="oprate"><a th:href="@{/viewDetails(uid=${myfile.fileID})}"><button>详情</button></a>
+
+                <a th:href="@{/downloadFile(uid=${myfile.fileID})}"><button>下载</button></a></td>
+        </tr>
+    </table>
+</body>
+</html>
